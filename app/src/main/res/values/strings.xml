@@ -2,5 +2,5 @@
     <string name="app_name">Gossips</string>
     <string name="send">Send Message</string>
     <string name="hint">Enter a message</string>
-    <string name="chooser">Send message via ... </string>
+    <string name="chooser">Send message via … </string>
 </resources>
