@@ -1,19 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Gossips" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Gossips" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/my_light_primary</item>
     </style>
-
+    <style name="Theme.Gossips.login_signup" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/my_light_primary</item>
+    </style>
     <style name="Theme.Gossips" parent="Base.Theme.Gossips" >
         <!--<item name="android:windowSplashScreenBackground">@color/white</item> -->
     </style>
     <style name="Theme.Gossips.Starting" parent="Theme.SplashScreen" >
         <item name="windowSplashScreenBackground">@color/ic_launcher_background</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/app_icon</item>
-        <item name="postSplashScreenTheme">@style/Theme.Gossips</item>
+        <item name="postSplashScreenTheme">@style/Theme.Gossips.login_signup</item>
     </style>
     <style name="GreenText" parent="TextAppearance.AppCompat">
         <item name="android:textColor">#00ff00</item>
+    </style>
+
+    <style name="RoundedCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
     </style>
 </resources>

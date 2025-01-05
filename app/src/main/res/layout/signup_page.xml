@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:text="@string/join_text"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img1"
+        android:layout_width="363dp"
+        android:layout_height="255dp"
+        android:layout_below="@+id/text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="4dp"
+        app:shapeAppearanceOverlay="@style/RoundedCorners"
+        android:src="@drawable/img1"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="4dp"
+        android:text="@string/text2"
+        />
+    <Button
+        android:id="@+id/get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginVertical="4dp"
+        android:text="@string/get_started"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/find_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:layout_below="@+id/get_started"
+        android:text="@string/find_account"
+        android:textColor="@color/app_color"
+        android:backgroundTint="@color/transparent"
+        app:strokeColor="@color/app_color"
+        app:strokeWidth="2dp"
+        />
+</RelativeLayout>
